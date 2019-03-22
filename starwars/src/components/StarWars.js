@@ -7,7 +7,7 @@ const StarWars = props => {
         <h2>{props.starwarsChars.name}</h2>
 
         <div className="identity">
-          <div>
+          <div className="list">
             <li>
               <strong>Height:</strong>
               {props.starwarsChars.height}
@@ -38,7 +38,7 @@ const StarWars = props => {
             </li>
           </div>
         </div>
-        <div className="info-container">
+        {/* <div className="info-container">
           <div className="top">
             <p className="url">
               <strong>Homeworld:</strong>
@@ -100,7 +100,7 @@ const StarWars = props => {
               {props.starwarsChars.url}
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
