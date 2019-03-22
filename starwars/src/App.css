@@ -7,47 +7,70 @@
 }
 /* write your parent styles in here for your App.js */
 .App {
-  
   /* background: white ; */
   margin: 0 auto;
- 
 }
 
 .full-list {
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- /* width: 400px; */
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* width: 400px; */
+  padding: 40px;
 }
 
-.character{
-  
-  display:flex;
+.character {
+  display: flex;
   justify-content: center;
   border: 1px solid black;
   margin: 10px auto;
-  background: white;
   background-image: linear-gradient(rgb(252, 110, 110), rgb(253, 253, 147));
-  width:250px;
-  height:400px;
+  width: 250px;
+  height: 400px;
+  background-image: url("./sw-bg.jpg");
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
+.character:hover {
+  opacity: 1;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.character h2 {
+  color: white;
+  background-image: url("./components/space.jpg");
+  padding: 10px 13px;
+  border-radius: 20px;
+}
+
+.list {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+
+
 .list li {
-padding:10px 0;
+  padding: 10px 0;
+  font-size: 16px;
 }
 
 .character .identity {
-display: flex;
-flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 
-.info-container{
-display:flex;
-justify-content: space-between;
+.info-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.url{
-  display:flex;
-  flex-direction:column;
+.url {
+  display: flex;
+  flex-direction: column;
 }
