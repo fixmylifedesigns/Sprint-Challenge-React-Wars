@@ -6,3 +6,38 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.App {
+  
+  /* background: white ; */
+  margin: 0 auto;
+ 
+}
+
+.full-list {
+ display: flex;
+ flex-direction: column;
+ /* width: 400px; */
+
+}
+
+.character{
+  border: 1px solid black;
+  margin: 10px 0;
+  background: white;
+  width:100%;
+}
+
+.character .identity {
+display: flex;
+flex-direction:column;
+}
+
+.info-container{
+display:flex;
+justify-content: space-between;
+}
+
+.url{
+  display:flex;
+  flex-direction:column;
+}
